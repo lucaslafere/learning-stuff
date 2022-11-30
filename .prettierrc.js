@@ -1,7 +1,7 @@
 module.exports = {
   printWidth: 120,
-  tabWidth: 1,
-  useTabs: true,
+  tabWidth: 2,
+  useTabs: false,
   semi: true,
   singleQuote: true,
   quoteProps: 'as-needed',
@@ -11,5 +11,5 @@ module.exports = {
   bracketSameLine: false,
   arrowParens: 'always',
   htmlWhitespaceSensitivity: 'css',
-  singleAttributePerLine: false,
+  singleAttributePerLine: true,
 };
