@@ -4,18 +4,16 @@ import React, { useState } from 'react';
 export default function App() {
   const [estado, setEstado] = useState('estadinho');
 
-
-
   return (
     <>
-      <Container>
+      <Container onClick={() => setEstado('kkkkkk mudei')}>
         oiiii, esse é o meu estado: {estado}, mas se vc clicar aqui eu vou mudar de nome
       </Container>
     </>
   );
 }
 
-const Container = styled.div`
+export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,5 +22,3 @@ const Container = styled.div`
   color: red;
   background-color: #f5f5f5;
 `;
-
-export { Container };

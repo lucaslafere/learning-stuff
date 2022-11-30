@@ -1,4 +1,3 @@
-//Em Button.jsx:
 import React from 'react';
 import PropTypes from 'prop-types';
 import * as S from './Style';
@@ -10,7 +9,7 @@ function Button({ label, backgroundColor = 'red', size = 'md', handleClick }) {
   const padding = `${scale * 0.5}rem ${scale * 1}rem`;
 
   return (
-    <S.Button onClick={handleClick} backgroundColor={backgroundColor} padding={padding}>
+    <S.Button onClick={handleClick} backgroundColor={backgroundColor} padding={padding} size={size}>
       {label}
     </S.Button>
   );
@@ -19,7 +18,7 @@ function Button({ label, backgroundColor = 'red', size = 'md', handleClick }) {
 Button.propTypes = {
   label: PropTypes.string,
   backgroundColor: PropTypes.string,
-  size: PropTypes.oneOf(['sm', 'md', 'lg']),
+  size: PropTypes.string,
   handleClick: PropTypes.func,
 };
 
